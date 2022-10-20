@@ -1,0 +1,136 @@
+area
+--------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript">
+window.alert("execute");
+document.write("<h1 style='color:blue'> Mean Stack Technologies</h1><br>");
+document.write("<h2>finding the area of circle</h2><br>");
+var r,pi,a;
+pi=3.14;
+r=window.prompt("radius","enter  radius");
+a=pi*r*r;
+document.write("<h2 style='color:green'>area of circle is...</h2>"+a);
+</script>
+</head>
+</html>
+ -------------------
+var and let example
+--------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript">
+window.alert("execute");
+document.write("<h1 style='color:blue'> Examples on var and let </h1> <br>");
+let y=20;
+y=parseInt(y);
+document.write("<h2>var reassignment</h2><br>");
+var x=10;
+document.write("before reassignment------"+x+"<br>");
+x=parseInt(x);
+var x=x*y;
+document.write("after reassignment------"+x+"<br>");
+document.write("<h2>let reassignment</h2><br>");
+let z;
+z=window.prompt("z value","5");
+document.write("z value is before reassignment---"+z+"<br>");
+z=parseInt(z);
+//let z=z*y;
+//document.write("z value is after reassignment---"+z+"<br>");
+let a;
+document.write("accessing no value assigned variable<br>");
+document.write("a value is "+a+"<br>");
+</script>
+</head>
+</html>
+---------------------------------------------
+movie details
+---------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript">
+window.alert("execute");
+document.write("<h1 style='color:blue'> Mean Stack Technologies</h1><br>");
+document.write("<h2>Displaying movie details</h2><br>");
+var name,language,rating;
+name="Aayudh";
+language="Hindi";
+rating=parseInt(9.0);
+document.write("<table><tr><th>Movie Details</th><th> Data Type</th></tr>");
+document.write("<tr><td>Name:"+name+"</td>");
+document.write("<td>"+typeof(name)+"</td></tr>");
+document.write("<br>");
+document.write("<tr><td>Language:"+language+"</td>");
+document.write("<td>"+typeof(language)+"</td></tr>");
+document.write("<tr><td>Rating:"+rating+"</td>");
+document.write("<td>"+typeof(rating)+"</td></tr></table>");
+</script>
+</head>
+</html>
+---------------------------------------------------------
+movie discount
+-------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript">
+window.alert("execute");
+var ticket_no;
+ticket_no=window.prompt("enter no of tickets",0);
+const cost=150.00;
+var total_cost=0;
+var discount=0;
+var dis_cost=0;
+total_cost=ticket_no*cost;
+discount=total_cost*0.1;
+dis_cost=total_cost-discount;
+document.write("<h2 style='color:green'>No of tickets :"+ticket_no+"</h2>");
+document.write("<h2 style='color:blue'>Total cost without discount: "+total_cost+"</h2>");
+document.write("<h2 style='color:blue'>Discount:"+discount+"</h2>");
+ document.write("<h2 style='color:red'>Total cost with discount:"+dis_cost+"</h2>");
+</script>
+</head>
+</html>
+--------------------------------------------------------------
+movie ticket booking
+------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript">
+window.alert("execute");
+var ticket_no;
+ticket_no=window.prompt("enter no of tickets",0);
+const cost=150.00;
+var total_cost=0;
+var discount=0;
+var dis_cost=0;
+if(ticket_no>=0 && ticket_no<=2)
+{
+ alert("Booking is possible");
+ total_cost=ticket_no*cost;
+ document.write("<h2 style='color:green'>No of tickets :"+ticket_no+"</h2>");
+ document.write("<h2 style='color:red'>Total cost :"+total_cost+"</h2>");
+}
+else if(ticket_no>=6)
+{
+ alert("Booking is not possible");
+ documnet.write("<h2 style='color:red'>Booking is not possible</h2>");
+}
+else
+{
+alert("Booking is possible");
+total_cost=ticket_no*cost;
+discount=total_cost*0.1;
+dis_cost=total_cost-discount;
+document.write("<h2 style='color:green'>No of tickets :"+ticket_no+"</h2>");
+document.write("<h2 style='color:blue'>Discount:"+discount+"</h2>");
+ document.write("<h2 style='color:red'>Total cost with discount:"+dis_cost+"</h2>");
+}
+</script>
+</head>
+</html>
+-----------------------------------------------------------
